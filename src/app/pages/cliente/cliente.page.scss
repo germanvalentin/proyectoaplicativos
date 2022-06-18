@@ -1,0 +1,67 @@
+
+ion-title{
+    font-family: Poppins;
+}
+
+h1{font-family: Poppins;
+    font-size: 2.5em;
+}
+h2{font-family: Poppins;
+    font-size: 1.5em;}
+
+.tittle-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.btn-input{
+    padding-top: 60px;
+}
+.btn-login{
+    width: 250px;
+    height: 50px;
+}
+@media (min-width: 850px) {
+
+    h1{font-size: 3.5em;}
+    h2{display: none;}
+    .btn-login{
+        width: 500px;
+    }
+
+    .btn-input{
+        padding-top: 80px; 
+    }
+    .code-qr{
+        position: relative;
+        left: 80%;
+        bottom: 5px;
+    }
+    .code-qr img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50px;
+    }
+    .code-qr h3{
+        display: block;
+        width: 250px;
+        font-family: Poppins;
+    }
+}
+
+@media (max-width: 850px){
+    .code-qr{
+        display: none;
+    }
+}
+
