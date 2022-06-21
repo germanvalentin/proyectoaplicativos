@@ -10,7 +10,7 @@ export class NumeroDeUsuarioService {
 
   constructor(private http: HttpClient){}
 
-  getAllGasto():Observable<numusuario[]> {
-    return this.http.get<numusuario[]>('https://api2.solucioneserp.net:8080/numerosdeusuario/3');
-}
+  getAllNum(): Observable<numusuario[]> {
+    return this.http.get<numusuario[]>('http://api2.solucioneserp.net:8080/numerosdeusuario/3');
+  }
 }

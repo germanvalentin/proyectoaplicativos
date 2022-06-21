@@ -9,7 +9,7 @@ export class AtrasService {
 
   constructor(private http: HttpClient){}
 
-    getAllGasto():Observable<atras[]> {
-      return this.http.get<atras[]>('https://api2.solucioneserp.net:8080/atras/1');
+    getAllAtras(): Observable<atras[]> {
+      return this.http.get<atras[]>('http://api2.solucioneserp.net:8080/atras/1');
 }
 }
