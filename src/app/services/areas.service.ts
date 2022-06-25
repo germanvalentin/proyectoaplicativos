@@ -10,6 +10,6 @@ export class AreasService {
   constructor(private http: HttpClient){}
 
     getAllAreas(): Observable<areas[]> {
-      return this.http.get<areas[]>(' http://api2.solucioneserp.net:8080/areas');
+      return this.http.get<areas[]>('http://api2.solucioneserp.net:8080/areas');
   }
 }

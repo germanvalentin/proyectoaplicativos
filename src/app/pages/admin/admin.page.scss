@@ -1,0 +1,111 @@
+
+.header{
+    flex-direction: column;
+    position: relative;
+    height: 6vh;
+    width: 100%;
+}
+.toobar{
+    display:flex;
+    height: 3vh;
+    text-align: center;
+}
+.title{
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+}
+.call{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:30vh
+}
+.division-work{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: bold;
+}
+.user{
+    align-self: flex-end;
+    margin-right: 90px;
+    font-family: Poppins;
+}
+.next-call{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.box-number{
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+    margin-bottom: 50px;
+    
+}
+
+.container2{
+    display: flex;
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    grid-gap: 200px;
+    flex-wrap: wrap;
+    grid-row-gap: 90px;
+}
+.box-container{
+    border-radius: 20px;
+}
+.box{
+    height:300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.box-one{
+    height:300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color:#428cff ;
+    border-radius: 20%;
+}
+.number1{
+    position: absolute;
+    margin-bottom: 120px;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+}
+.text1{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 150px;
+}
+.btn{
+    position: absolute;
+    width: 15%;
+    margin-left: 10%;
+    margin-top: 20px;
+
+}
+.footer-tittle{
+    font-family: Poppins;
+    font-size:15px;
+    text-align:center;
+}
