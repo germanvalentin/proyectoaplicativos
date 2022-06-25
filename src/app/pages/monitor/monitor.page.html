@@ -7,14 +7,11 @@
   <section class="call">
     <h2 class="last_call">ULTIMO LLAMADO</h2>
   <div *ngFor="let numactual of numActuales" class="container1">
-    <div *ngIf="numactual.ultimo === 'si'">
+    <div *ngIf="numactual.ultimo === 'si'" class="container-two">
     <h1 class="number1">{{numactual.numero}}</h1>
     <h3 class="text1">{{numactual.area}}</h3>
   </div>
 </div>
-
-
-
 </section>
   <section class="areas">
   <div *ngFor="let numactual of numActuales"  class="container2">
