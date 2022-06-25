@@ -9,7 +9,7 @@ export class ObtenerNumeroService {
 
   constructor(private http: HttpClient){}
 
-    getAllObtenerNumeros(): Observable<obtenernumeros[]> {
-      return this.http.get<obtenernumeros[]>('http://api2.solucioneserp.net:8080/obtenernumero/2');
+    getAllObtenerNumeros(id: string): Observable<obtenernumeros[]> {
+      return this.http.get<obtenernumeros[]>('http://api2.solucioneserp.net:8080/obtenernumero/' + id);
 }
 }

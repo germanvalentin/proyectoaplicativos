@@ -10,17 +10,9 @@
     <h2>Solicite su numero: </h2>
   </div>
   <section id="btn">
-      <div class="btn-input">
-        <ion-button  class="btn-login" expand="block"color="primary"
-        shape="round">Cuenta Corriente </ion-button>
-      </div>
-      <div class="btn-input">
-        <ion-button  class="btn-login" expand="block"color="primary"
-        shape="round">Presupuesto</ion-button>
-      </div>
-      <div class="btn-input">
-        <ion-button  class="btn-login" expand="block"color="primary"
-        shape="round">Ventas</ion-button>
+      <div  *ngFor=" let areasactuales of areasActuales" class="btn-input">
+        <ion-button routerLink="/celular/{{areasactuales.id}}" (click)="areaObtener(areasactuales.id)" class="btn-login" expand="block"color="primary"
+        shape="round">{{areasactuales.nombre}}</ion-button>
       </div>
   </section>
   <div class="code-qr">

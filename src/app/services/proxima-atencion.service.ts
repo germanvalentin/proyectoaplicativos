@@ -10,6 +10,6 @@ export class ProximaAtencionService {
   constructor(private http: HttpClient){}
 
     getAllProximaAtencion(): Observable<proxatencion[]> {
-      return this.http.get<proxatencion[]>('https://api2.solucioneserp.net:8080/proximaatencion/3/1');
+      return this.http.get<proxatencion[]>('http://api2.solucioneserp.net:8080/proximaatencion/3/1');
 }
 }

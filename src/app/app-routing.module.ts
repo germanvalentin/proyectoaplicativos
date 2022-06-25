@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'admin',
     loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
   },
@@ -22,7 +23,10 @@ const routes: Routes = [
     path: 'monitor',
     loadChildren: () => import('./pages/monitor/monitor.module').then( m => m.MonitorPageModule)
   },
-
+  {
+    path: 'celular/:id',
+    loadChildren: () => import('./pages/celular/celular.module').then( m => m.CelularPageModule)
+  }
 ];
 
 @NgModule({
