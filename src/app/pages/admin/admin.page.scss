@@ -1,0 +1,111 @@
+
+.header{
+    flex-direction: column;
+    position: relative;
+    height: 8vh;
+    width: 100%;
+}
+.toobar{
+    display:flex;
+    height: 5vh;
+    text-align: center;
+}
+.title{
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+}
+.call{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:30vh
+}
+.division-work{
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: bold;
+}
+.user{
+    align-self: flex-end;
+    margin-right: 90px;
+    font-family: Poppins;
+}
+.next-call{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.box-number{
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+    margin-bottom: 50px;
+    
+}
+
+.container2{
+    display: flex;
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    grid-gap: 200px;
+    flex-wrap: wrap;
+    grid-row-gap: 90px;
+}
+
+.box{
+    height:300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding:10px;
+    border-radius: 20px;
+   
+    
+    
+}
+.number1{
+    position: absolute;
+    margin-bottom: 120px;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+}
+.text1{
+    position: absolute;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 150px;
+}
+.btn{
+    display:flex;
+    position: absolute;
+    margin-top:410px;
+    width: 15%;
+}
+.footer-tittle{
+    font-family: Poppins;
+    font-size:15px;
+    text-align:center;
+}
+@media screen and (max-width: 1050px ){
+.box-number{
+    margin-top:20px;
+}
+.next-call{
+    margin-top:20px;
+}    
+}
+
