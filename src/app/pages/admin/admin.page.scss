@@ -7,7 +7,6 @@
 }
 .toobar{
     display:flex;
-    height: 3vh;
     text-align: center;
 }
 .title{
@@ -18,12 +17,13 @@
 }
 .content{
     display: flex;
+    margin: 0;
 }
 .call{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:30vh
+    height:30vh;
 }
 .division-work{
     font-family: Poppins;
@@ -45,9 +45,7 @@
 .box-number{
     display: flex;
     justify-content: center;
-    margin-top: -110px;
-    margin-bottom: 50px;
-    
+    margin-top: -120px;
 }
 .call a{
     text-decoration: none;
@@ -69,7 +67,7 @@
     position: relative;
     grid-gap: 200px;
     flex-wrap: wrap;
-    grid-row-gap: 90px;
+    grid-row-gap: 45px;
 }
 .box-container{
     border-radius: 20px;
@@ -120,8 +118,14 @@
     font-size:15px;
     text-align:center;
 }
-
-.box-conteiner span{
-    font-size: 2.8em;
-    font-family: Poppins;
+.box-conteiner-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.box-conteiner-one span{
+    font-size: 2.5em;
+    font-family: Poppins;
+    font-weight:bold ;
+}
+
