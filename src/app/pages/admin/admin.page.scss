@@ -2,12 +2,11 @@
 .header{
     flex-direction: column;
     position: relative;
-    height: 8vh;
+    height: 6vh;
     width: 100%;
 }
 .toobar{
     display:flex;
-    height: 5vh;
     text-align: center;
 }
 .title{
@@ -18,12 +17,13 @@
 }
 .content{
     display: flex;
+    margin: 0;
 }
 .call{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:30vh
+    height:30vh;
 }
 .division-work{
     font-family: Poppins;
@@ -45,11 +45,20 @@
 .box-number{
     display: flex;
     justify-content: center;
-    margin-top: -110px;
-    margin-bottom: 50px;
-    
+    margin-top: -120px;
 }
-
+.call a{
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    background-color: #428cff;
+    color: white;
+    padding:10px;
+    border-radius:20px;
+    font-family: Poppins;
+}
 .container2{
     display: flex;
     width: 50%;
@@ -58,9 +67,11 @@
     position: relative;
     grid-gap: 200px;
     flex-wrap: wrap;
-    grid-row-gap: 90px;
+    grid-row-gap: 45px;
 }
-
+.box-container{
+    border-radius: 20px;
+}
 .box{
     height:300px;
     width: 320px;
@@ -68,12 +79,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
     padding:10px;
-    border-radius: 20px;
-   
-    
-    
+}
+.box-one{
+    height:300px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color:#428cff ;
+    border-radius: 20%;
 }
 .number1{
     position: absolute;
@@ -84,28 +101,31 @@
 }
 .text1{
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin-top: 150px;
 }
 .btn{
-    display:flex;
     position: absolute;
-    margin-top:410px;
     width: 15%;
+    margin-left: 10%;
+    margin-top: 20px;
+
 }
 .footer-tittle{
     font-family: Poppins;
     font-size:15px;
     text-align:center;
 }
-@media screen and (max-width: 1050px ){
-.box-number{
-    margin-top:20px;
+.box-conteiner-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.next-call{
-    margin-top:20px;
-}    
+.box-conteiner-one span{
+    font-size: 2.5em;
+    font-family: Poppins;
+    font-weight:bold ;
 }
 

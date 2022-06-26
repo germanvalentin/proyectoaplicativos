@@ -11,5 +11,5 @@ export class NumerosActualesService {
 
     getAllActual(): Observable<numactual[]> {
       return this.http.get<numactual[]>('http://api2.solucioneserp.net:8080/numeros_actuales');
-}
+  }
 }
