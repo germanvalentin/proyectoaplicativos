@@ -46,17 +46,28 @@ export class AdminPage implements OnInit {
       this.areasActuales = resp;
     
     });
-    /*  this.proximaService. getAllProximaAtencion().subscribe(resp=>{
-      console.log(resp);
-      this.proximaAtencion = resp;
-    });
-    this.atrasService. getAllAtras().subscribe(resp=>{
-      console.log(resp);
-      this.atrasNum = resp;
-    });*/
+  
   }
   nombreAreas(areaId:number){
   return this.areasActuales.find(area => Number(area.id) == areaId)?.nombre;
+}
+change(numchange:number){
+  let aux = this.numUserfalse.areas.findIndex(areas => areas.numero==numchange);
+  this.atendiendo = this.numUserfalse.areas[aux];
+  this.numUserfalse.areas.splice(aux,1);
+  this.proximaService. getAllProximaAtencion(String(this.atendiendo.areaid)).subscribe(resp=>{
+    console.log(resp);
+    this.numUserfalse.areas.unshift({numero:resp.numero,atendiendo:false,areaid:resp.areaid});
+  });
+  console.log(this.numUserfalse)
+}
+back(numchange:number){
+  console.log(numchange);
+  let aux = this.numUserfalse.areas.findIndex(areas => areas.areaid==numchange);
+  this.atrasService. getAllAtras(String(numchange)).subscribe(resp=>{
+    this.numUserfalse.areas.splice(aux,1,{numero:resp.numero,atendiendo:false,areaid:resp.areaid})
+    
+  });
 }
 }
 

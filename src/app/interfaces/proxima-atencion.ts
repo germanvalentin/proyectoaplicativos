@@ -1,3 +1,4 @@
 export interface proxatencion {
-    mensaje: string;
+    numero: number;
+    areaid: string;
 }

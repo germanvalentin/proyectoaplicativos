@@ -6,6 +6,7 @@
   <ion-content class="content">
     <section class="call">
       <a routerLink="/monitor">Monitor</a>
+      <a class="client" routerLink="/cliente">Cliente</a>
       <h1 class="division-work">PUESTO 5</h1>
       <h3 class="user">Usuario: Juan Romero</h3>
       <h5 class="next-call">Llamada al proximo numero</h5>
@@ -13,11 +14,11 @@
       <section class="box-number">
       <div class="container2">
       <div *ngFor="let number of numUserfalse.areas" class="box-container">
-        <ion-button class="box" shape="round">
+        <ion-button (click)="change(number.numero)" class="box" shape="round">
           <h2 class="number1">{{number.numero}}</h2>
           <h2 class="text1">{{nombreAreas(number.areaid)}}</h2>
         </ion-button>
-        <ion-button class="btn"color="success" shape="round">Atras</ion-button>
+        <ion-button (click)="back(number.areaid)" class="btn"color="success" shape="round">Atras</ion-button>
       </div>
       <div class="box-conteiner-one">
       <span>Atendiendo: </span>
